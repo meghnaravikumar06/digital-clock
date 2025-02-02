@@ -27,5 +27,10 @@ document.getElementById("toggleFormat").addEventListener("click", () => {
     updateClock();
 });
 
+// To close with animation (example: close after 10 seconds)
+setTimeout(() => {
+    document.querySelector(".clock-container").style.animation = "closeAnimation 0.6s ease-out forwards";
+}, 10000); // Closes after 10 seconds
+
 setInterval(updateClock, 1000);
 updateClock();
