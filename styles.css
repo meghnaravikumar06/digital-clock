@@ -1,0 +1,41 @@
+/* Apply a minimalistic dark theme with green and white accents */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Cool dark grey */
+    color: #ffffff; /* White text */
+    margin: 0;
+}
+
+.clock-container {
+    text-align: center;
+    background: #2a2d2e; /* Slightly lighter dark grey */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 128, 0.3); /* Soft green glow */
+}
+
+#clock {
+    font-size: 60px;
+    font-weight: bold;
+    color: #00ff80; /* Neon green */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #00aa55; /* Muted green */
+    color: #ffffff;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00994d; /* Darker green */
+}
