@@ -1,41 +1,86 @@
-/* Apply a minimalistic dark theme with green and white accents */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #2ecc71; /* Green text */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1e1e1e; /* Cool dark grey */
-    color: #ffffff; /* White text */
+    overflow: hidden;
     margin: 0;
 }
 
+/* Clock container styling */
 .clock-container {
+    background: #ffffff; /* White background */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
-    background: #2a2d2e; /* Slightly lighter dark grey */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px rgba(0, 255, 128, 0.3); /* Soft green glow */
+    transform: scale(0);
+    animation: openAnimation 0.6s ease-out forwards;
 }
 
+/* Opening animation for the clock */
+@keyframes openAnimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Closing animation for the clock */
+@keyframes closeAnimation {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Clock text */
 #clock {
     font-size: 60px;
-    font-weight: bold;
-    color: #00ff80; /* Neon green */
-    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2ecc71; /* Green clock color */
+    margin-bottom: 20px;
 }
 
+/* Button styling */
 button {
-    padding: 12px 20px;
-    font-size: 16px;
+    background: #2ecc71; /* Green button */
+    color: white;
     border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
     cursor: pointer;
-    border-radius: 6px;
-    background: #00aa55; /* Muted green */
-    color: #ffffff;
-    transition: background 0.3s ease;
+    outline: none;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
+/* Button hover effect */
 button:hover {
-    background: #00994d; /* Darker green */
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.98);
 }
