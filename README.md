@@ -6,7 +6,6 @@ A simple, interactive digital clock built using HTML, CSS, and JavaScript. The c
 - Real-time time update every second.
 - Toggle between **24-hour** and **12-hour** formats.
 - Responsive and minimalist design.
-- Soft green and cool dark grey color palette for a sleek look.
 
 ## Tech Stack
 - **HTML**: Structure of the webpage.
