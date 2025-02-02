@@ -22,4 +22,4 @@ A simple, interactive digital clock built using HTML, CSS, and JavaScript. The c
 ## Implementation
 Check out the clock at the link below:
    ```sh
-   https://username.github.io/digital-clock/
+   https://meghnaravikumar06.github.io/digital-clock/
