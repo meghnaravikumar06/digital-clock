@@ -17,3 +17,9 @@ A simple, interactive digital clock built using HTML, CSS, and JavaScript. The c
 1. **Clone this repository** or download the files:
    ```sh
    git clone https://github.com/meghnaravikumar06/digital-clock.git
+
+
+## Implementation
+Check out the clock at the link below:
+   ```sh
+   https://username.github.io/digital-clock/
